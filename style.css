@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: nome;
+  text-decoration: none;
 }
 /* navbar - inicio*/
 .navbar {
@@ -18,4 +18,5 @@
   font-weight: 500;
 }
 .navbar .menu {
+  list-style: none;
 }

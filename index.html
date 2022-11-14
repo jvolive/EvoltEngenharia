@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Evolt Engenharia</title>
   </head>
   <body>
-    <header>
-      <h2><img src="logo 2.png" alt=""></h2>
-
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="index-1.html">Calculadora Solar</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="max-width">
+        <img class="logo_header" src="/img/logo 2.png" alt="" />
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="index-1.html">Calculadora Solar</a></li>
+            <li><a href="index-1.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <h1>Titulo h1</h1>
-    <p>Uma breve descrição da pagina</p>
-
     <main>
-      <section class="products">
-        <div class="conheca">Conheca nossos Produtos</div>
-        <div class="historia">A Evolt Engenharia começou ...</div>
+      <section class="home">
+        <div class="max-width">
+          <div class="home-content">conteudo da home page</div>
+          <div class="cal-solar">Faça seu calculo aqui</div>
+         <!--<button>Calcule aqui</button>--> 
+        </div>
+       
       </section>
     </main>
 
@@ -43,7 +46,12 @@
     </footer>
   </body>
   <script
-    type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
   <script src="script.js"></script>
 </html>

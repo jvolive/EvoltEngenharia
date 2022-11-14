@@ -1,7 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap");
+:root {
+  --color-white: #fff;
+  --color-client1: #0c0c2c;
+  --color-client2: #fb6b04;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/*navbar -- inicio*/
+.header {
+  position: flex;
+  width: 100%;
+  background: var(--color-client1);
+  padding: 15px 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.header .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_header {
+  width: 400px;
+}
+.navbar li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar li a {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+/* home -- inicio*/
+.home {
+  display: flex;
+  background: url(img/background.jpg) no-repeat center;
+  height: 100vh;
+  color: var(--color-white);
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
 }

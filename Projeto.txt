@@ -3,4 +3,3 @@
 - Calculadora de economia solar
 - Area de contato
 - Plugin web-whatsapp
-Prazo de entrega 15/11

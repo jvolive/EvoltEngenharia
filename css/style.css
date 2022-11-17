@@ -10,3 +10,43 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+body {
+  font-size: 100%;
+}
+/* Header - Cabeçalho */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  background: var(--color-client1);
+}
+.logo {
+  height: 130px;
+}
+.menu ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.menu li a {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--color-client2);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+header button {
+  border: 2px solid var(--color-white);
+  padding: 10px 20px;
+  background: none;
+  border-radius: 40px;
+  color: var(--color-client2);
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  cursor: pointer;
+}
+/*Section 1 - Produtos */

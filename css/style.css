@@ -1,52 +1,156 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap");
-:root {
-  --color-white: #fff;
-  --color-client1: #0c0c2c;
-  --color-client2: #fb6b04;
-}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
   text-decoration: none;
 }
-body {
-  font-size: 100%;
+
+:root {
+  --color-white: #fff;
+  --color-dark: #000000;
+  --color-client1: #0c0c2c;
+  --color-client2: #fb6b04;
 }
-/* Header - Cabeçalho */
-header {
+
+body {
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+.navigation {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  padding: 24px;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  width: 100%;
+  background: var(--color-white);
+  transition: all 0.5;
+  position: fixed;
+}
+
+.navigation.logo {
+  color: var(--color-client2);
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navigation ul li a {
+  color: var(--color-client1);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: var(--color-client2);
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--color-dark);
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+  color: var(--color-client2);
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+
+.home-text {
+  max-width: 37rem;
+}
+
+.home-text .text-h4 {
+  font-size: 1.5rem;
+  color: var(--color-client2);
+  margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.home-text p {
+  margin-bottom: 4rem;
+}
+
+.home-btn {
+  padding: 15px 45px;
+  background: var(--color-client2);
+  color: var(--color-white);
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.home-btn:hover {
   background: var(--color-client1);
 }
-.logo {
-  height: 130px;
+
+.home-img img {
+  width: 100%;
 }
-.menu ul {
-  display: flex;
-  gap: 32px;
-  list-style: none;
+
+@media (max-width: 785px) {
+  .navigation {
+    padding: 18px 20px;
+  }
+  .menu {
+    display: block;
+  }
+  .menu.ativo .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2){
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--color-white);
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-menu.ativo{
+    right: 0;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
 }
-.menu li a {
-  font-family: "Ubuntu", sans-serif;
-  color: var(--color-client2);
-  font-weight: 500;
-  font-size: 18px;
-  padding: 8px 15px;
-}
-header button {
-  border: 2px solid var(--color-white);
-  padding: 10px 20px;
-  background: none;
-  border-radius: 40px;
-  color: var(--color-client2);
-  font-weight: 500;
-  font-family: "Ubuntu", sans-serif;
-  letter-spacing: 2px;
-  font-size: 12px;
-  cursor: pointer;
-}
-/*Section 1 - Produtos */

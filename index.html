@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Evolt Engenharia</title>
   </head>
@@ -12,11 +16,11 @@
       <nav class="navigation">
         <a href="#" class="logo"> <img src="/img/logo-nav.png" alt="" /></a>
         <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html">Inicio</a></li>
-          <li class="nav-item"><a href="#">Sobre nos</a></li>
+          <li class="nav-item"><a href="#">Sobre nós</a></li>
           <li class="nav-item"><a href="#">Contato</a></li>
           <li class="nav-item"><a href="index-2.html">Calculadora Solar</a></li>
         </ul>
+        <!--Responsive menu-->
         <div class="menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -24,7 +28,19 @@
         </div>
       </nav>
     </header>
+
     <main>
+       <!--Slides-->
+       <section class="c-carousel">
+        <div class="c-carousel-slides js-carousel">
+          <div class="c-carousel-slide">1</div>
+          <div class="c-carousel-slide">2</div>
+          <div class="c-carousel-slide">3</div>
+          <div class="c-carousel-slide">4</div>
+        </div>
+        <div class="js-carousel--simple-dots" role="tablist"></div>
+      </section>
+      <!--Home page-->
       <section class="home">
         <div class="home-text">
           <h4 class="text-h4">Bem vindo</h4>
@@ -37,16 +53,10 @@
           </p>
           <a href="#" class="home-btn"> Faça seu orçamento</a>
         </div>
-        <!--<div class="home-img">
-          <img src="/img/home-background.jpg" alt="background" />
-        </div>-->
-        <div class="container-slide">
-          <div class="action-button" id="previous">&laquo</div>
-          <div class="container-items" id="container-items"></div>
-          <div class="action-button" id="next">&raquo</div>
-        </div>
       </section>
+     
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

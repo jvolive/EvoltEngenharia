@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Evolt Engenharia</title>
@@ -14,11 +17,19 @@
   <body>
     <header>
       <nav class="navigation">
-        <a href="#" class="logo"> <img src="/img/logo-nav.png" alt="" /></a>
+        <a href="index.html" class="logo">
+          <img src="/img/logo-nav.png" alt=""
+        /></a>
         <ul class="nav-menu">
-          <li class="nav-item"><a href="#">Sobre nós</a></li>
-          <li class="nav-item"><a href="#">Contato</a></li>
-          <li class="nav-item"><a href="index-2.html">Calculadora Solar</a></li>
+          <li class="nav-item">
+            <a href="energia_solar.html">Energia solar</a>
+          </li>
+          <li class="nav-item"><a href="sobre.html">Sobre nós</a></li>
+          <li class="nav-item"><a href="projetos.html">Nossos projetos</a></li>
+          <li class="nav-item"><a href="contato.html">Contato</a></li>
+          <li class="nav-item">
+            <a href="cal_solar.html">Calculadora Solar</a>
+          </li>
         </ul>
         <!--Responsive menu-->
         <div class="menu">
@@ -28,18 +39,7 @@
         </div>
       </nav>
     </header>
-
     <main>
-       <!--Slides-->
-       <section class="c-carousel">
-        <div class="c-carousel-slides js-carousel">
-          <div class="c-carousel-slide">1</div>
-          <div class="c-carousel-slide">2</div>
-          <div class="c-carousel-slide">3</div>
-          <div class="c-carousel-slide">4</div>
-        </div>
-        <div class="js-carousel--simple-dots" role="tablist"></div>
-      </section>
       <!--Home page-->
       <section class="home">
         <div class="home-text">
@@ -53,10 +53,28 @@
           </p>
           <a href="#" class="home-btn"> Faça seu orçamento</a>
         </div>
+        <!--Slides-->
+        <div class="slider">
+          <img class="selected" src="/img/logo.png" alt="img 1" />
+          <img src="/img/logo-nav.png" alt="img 2" />
+          <img src="/img/painel-de-energia-solar.jpg" alt="img 3" />
+          <img src="/img/energia-solar-industrial.jpg" alt="img 4" />
+        </div>
       </section>
-     
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+    <footer>
+      <nav>
+        <ul class="nav-footer">
+          <a href="https://www.facebook.com/evolteng.engenharia/"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </ul>
+      </nav>
+    </footer>
     <script src="/js/script.js"></script>
   </body>
 </html>

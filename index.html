@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Evolt Engenharia</title>
@@ -59,19 +59,23 @@
           <a href="#" class="home-btn"> Faça seu orçamento</a>
         </div>
         <!--Slider-->
-        <div class="glider-contain">
-          <div class="glider">
-            <img src="/img/energia-solar-industrial.jpg" alt="img 1" />
-            <img src="/img/painel-de-energia-solar.jpg" alt="img 2" />
-            <img src="/img/logo-nav.png" alt="img 3" />
-            <img src="/img/logo.png" alt="img 4" />
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/img/energia-solar-industrial.jpg" alt="img 1" /></div>
+            <div class="swiper-slide"><img src="/img/painel-de-energia-solar.jpg" alt="img 2" /></div>
+            <div class="swiper-slide"><img src="/img/logo.png" alt="img 3" /></div>
+            <div class="swiper-slide"><img src="/img/logo-nav.png" alt="img 4" /></div>
           </div>
-          <button aria-label="Previous" class="glider-prev">«</button>
-          <button aria-label="Next" class="glider-next">»</button>
-        </div>
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
       </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

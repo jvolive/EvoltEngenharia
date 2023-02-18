@@ -9,26 +9,24 @@ menu.addEventListener("click", () => {
 });
 
 //slider
-new Glider(document.querySelector(".glider"), {
-  // Mobile-first defaults
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  scrollLock: true,
-  duration: 0.5,
-  arrows: {
-    prev: ".glider-prev",
-    next: ".glider-next",
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  autoplay: {
+    delay: 5000, // tempo em milissegundos entre cada slide
+    disableOnInteraction: false, // não desativar o autoplay quando o usuário interagir com o Swiper
   },
-  responsive: [
-    {
-      // screens greater than >= 1024px
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        itemWidth: 150,
-        duration: 0.25,
-      },
-    },
-  ],
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  keyboard: {
+    enabled: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

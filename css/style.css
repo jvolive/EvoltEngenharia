@@ -32,6 +32,7 @@ body {
   background: var(--color-white);
   transition: all 0.5;
   position: fixed;
+  z-index: 2;
 }
 
 .navigation .logo img {
@@ -83,7 +84,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10%;
+  padding: 100px;
 }
 
 .home-text {
@@ -121,8 +122,19 @@ body {
   background: var(--color-client1);
 }
 /* Slider*/
+.glider {
+  height: 80%;
+  width: 100vh;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
 
-/*footer*/
+.glider img {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
 /*responsive*/
 @media (max-width: 785px) {

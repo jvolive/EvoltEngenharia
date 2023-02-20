@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós</title>
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Sobre | Evolt Engenharia</title>
+  </head>
+  <body>
     <header>
       <nav class="navigation">
-        <a href="index.html" class="logo"> <img src="/img/logo-nav.png" alt="" /></a>
+        <a href="index.html" class="logo">
+          <img src="/img/logo-nav.png" alt="img nav"
+        /></a>
         <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="energia_solar.html">Energia solar</a>
+          </li>
           <li class="nav-item"><a href="sobre.html">Sobre nós</a></li>
+          <li class="nav-item"><a href="projetos.html">Nossos projetos</a></li>
           <li class="nav-item"><a href="contato.html">Contato</a></li>
-          <li class="nav-item"><a href="cal_solar.html">Calculadora Solar</a></li>
+          <li class="nav-item">
+            <a href="cal_solar.html">Calculadora Solar</a>
+          </li>
         </ul>
         <!--Responsive menu-->
         <div class="menu">
@@ -24,5 +40,57 @@
       </nav>
     </header>
 
-</body>
+    <main>
+      <!--Home page-->
+      <section class="sobre-home">
+        <div class="sobre-home-text">
+          <h3 class="sobre-h3">Nossa historia</h3>
+          <p>
+            A empresa eVOLT Engenharia nasceu a partir de nossa visão da
+            necessidade no mercado de empresas idoneas, responsavéis, com o
+            intuito de agregar valor aos serviços de engenharia, com
+            responsabilidade social e sustentabilidade, transformando e
+            impactando a sociedade. Acreditamos que por meio de nossos serviços
+            podemos contribuir com o crescimento sustentavel de nosso país.
+            Nosso Proposito esta na geração de valor e na melhoria de vida de
+            nossos clientes e colaboradores.
+          </p>
+        </div>
+        <div class="sobre-button">
+          <a href="#" class="sobre-btn"> Faça seu orçamento</a>
+        </div>
+        <div class="sobre-contato">
+          <div class="contatos">
+            <a
+              href="https://www.google.com/maps/place/eVOLT+Engenharia/@-24.3266797,-50.6181823,17z/data=!4m15!1m8!3m7!1s0x94e9833f99ebc6eb:0x18e61531dcda12ed!2sR.+Jos%C3%A9+Sherlock+Carneiro+Martins,+136+-+Centro,+Tel%C3%AAmaco+Borba+-+PR,+84261-280!3b1!8m2!3d-24.3266797!4d-50.6181823!16s%2Fg%2F11tsjsznhz!3m5!1s0x94e98345c7adf9db:0x6fdd98413f31f430!8m2!3d-24.3266797!4d-50.6181823!16s%2Fg%2F11s40p29kj"
+              ><i class="fa-solid fa-location-dot"></i> Travessa José Sherlock
+              Carneiro Martins, 136 - Centro - CEP 84261-280 - Telemaco Borba -
+              PR</a
+            >
+            <a
+              href="https://api.whatsapp.com/message/7EHPHXJGYQ35O1?autoload=1&app_absent=0"
+              ><i class="fa-brands fa-whatsapp"></i>Tel (43) 99137-0617</a
+            >
+          </div>
+          <div class="contatos-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>
+          2020<i class="fa-regular fa-copyright"></i> Evolt engenharia - Todos
+          os direitos reservados
+        </p>
+        <p>Desenvolvido por JV soluções e tecnologias</p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
 </html>

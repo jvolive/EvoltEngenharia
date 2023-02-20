@@ -89,6 +89,7 @@ body {
 
 .home-text {
   max-width: 37rem;
+  width: 50%;
 }
 
 .home-text .text-h4 {
@@ -123,8 +124,9 @@ body {
 }
 /* Slider*/
 .swiper {
-  width: 600px;
+  width: 50%;
   height: 300px;
+  border-radius: 10px;
 }
 .swiper img {
   align-items: center;
@@ -133,13 +135,78 @@ body {
 }
 .swiper-button-prev,
 .swiper-button-next {
-  --swiper-navigation-color: var(
-    --color-client2
-  ); 
+  --swiper-navigation-color: var(--color-client2);
 }
 .swiper-pagination-bullet {
   --swiper-pagination-color: var(--color-client2);
 }
+
+/*Page sobre*/
+.sobre-home {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  display: block;
+}
+
+.sobre-home-text {
+  max-width: 37rem;
+  width: 50%;
+}
+
+.sobre-home-text .sobre-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-client2);
+  margin-bottom: 1rem;
+}
+
+.sobre-home-text p {
+  margin-bottom: 4rem;
+}
+
+.sobre-button {
+  width: 100%;
+}
+.sobre-btn {
+  padding: 15px 45px;
+  background: var(--color-client2);
+  color: var(--color-white);
+  border-radius: 10px;
+  font-weight: 550;
+  transition: all 0.5s;
+}
+
+.sobre-btn:hover {
+  background: var(--color-client1);
+}
+.sobre-contato {
+  align-items: center;
+  display: block;
+  justify-content: center;
+  padding: 50px;
+}
+.sobre-contato a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-client1);
+  margin-bottom: 1rem;
+  display: block;
+  justify-content: center;
+}
+.contatos-icons i {
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+footer {
+  padding: 1px;
+  background-color: var(--color-white);
+}
+
 /*responsive*/
 @media (max-width: 785px) {
   .navigation {

@@ -17,7 +17,7 @@ const swiper = new Swiper(".swiper", {
     delay: 5000, // tempo em milissegundos entre cada slide
     disableOnInteraction: false, // não desativar o autoplay quando o usuário interagir com o Swiper
   },
-
+  autoHeight: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -30,5 +30,3 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-

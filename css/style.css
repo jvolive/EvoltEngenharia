@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -43,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5rem;
+  list-style: none;
 }
 
 .navigation ul li a {
@@ -187,22 +187,28 @@ body {
   margin-bottom: 1rem;
 }
 .solar-home-text p {
+  font-size: 16px;
   margin-bottom: 64px;
-  padding: 10px;
+  padding: 5px;
   margin: 20px;
   line-height: 1.5em;
   text-align: justify;
 }
-.solar-home-passo_a_passo {
-  font-size: 18px;
+.solar-home-img img {
+  width: 700px;
+  padding: 20px 0;
 }
-.solar-home-passo_a_passo li {
-  margin-bottom: 5px;
-  margin-right: 10px;
-  display: block;
+.solar-home-text ol {
+  padding: 5px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.solar-home-text ul {
+  list-style: none;
 }
 .solar-button {
   width: 100%;
+  padding: 30px;
   text-align: center;
 }
 

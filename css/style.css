@@ -117,6 +117,7 @@ body {
   border-radius: 10px;
   font-weight: 550;
   transition: all 0.5s;
+  font-size: 20px;
 }
 
 .btn-orcamento:hover {
@@ -155,7 +156,7 @@ body {
   font-size: 12px;
   color: var(--color-client1);
 }
-/*Page-solar*/
+/* Start - Page-solar*/
 .solar-home {
   width: 100%;
   height: 100%;
@@ -165,22 +166,25 @@ body {
   display: block;
 }
 .solar-home-text {
-  text-align: center;
+  text-align: justify;
   text-justify: distribute-all-lines;
 }
 .solar-home-text h2 {
+  text-align: center;
   font-size: 32px;
   font-weight: 700;
   color: var(--color-client2);
   margin-bottom: 1rem;
 }
 .solar-home-text h3 {
+  text-align: center;
   font-size: 24px;
   font-weight: 700;
   color: var(--color-client2);
   margin-bottom: 1rem;
 }
 .solar-home-text h4 {
+  text-align: center;
   font-size: 24px;
   font-weight: 700;
   color: var(--color-client2);
@@ -192,26 +196,38 @@ body {
   padding: 5px;
   margin: 20px;
   line-height: 1.5em;
-  text-align: justify;
+}
+.solar-home-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .solar-home-img img {
   width: 700px;
   padding: 20px 0;
 }
+
 .solar-home-text ol {
-  padding: 5px;
-  margin-bottom: 20px;
-  text-align: justify;
+  list-style-type: decimal;
 }
-.solar-home-text ul {
-  list-style: none;
+.solar-home-text ol li {
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
-.solar-button {
-  width: 100%;
-  padding: 30px;
+.solar-home-text li {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
-/*Page-sobre*/
+.solar-button {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+/* End - Page-solar*/
+
+/*Start - Page-sobre*/
 /*historia*/
 .sobre-home {
   width: 100%;
@@ -266,16 +282,88 @@ body {
 .fb-post-container {
   text-align: center;
 }
+/*End - Page-sobre*/
+
+/*Start - Page contatos*/
+.contato-home {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 110px;
+  display: block;
+}
+
+.contato-home-text {
+  text-align: center;
+  text-justify: distribute-all-lines;
+}
+.contato-home-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-client2);
+  margin-bottom: 1rem;
+}
+
+.contato-home-text p {
+  margin-bottom: 64px;
+  padding: 15px;
+  margin: 20px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.contato-button {
+  width: 100%;
+  text-align: center;
+}
+/*End - Page contatos*/
+
+/*Start - Page calculadora*/
+.cal_solar-home {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 110px;
+  display: block;
+}
+
+.cal_solar-home-text {
+  text-align: center;
+  text-justify: distribute-all-lines;
+}
+.cal_solar-home-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-client2);
+  margin-bottom: 1rem;
+}
+
+.cal_solar-home-text p {
+  margin-bottom: 64px;
+  padding: 15px;
+  margin: 20px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.cal_solar-button {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+/*End - Page calculadora*/
 /*information*/
 .infos {
   align-items: center;
   display: block;
   justify-content: center;
-  padding: 50px;
+  padding: 20px;
   text-align: center;
 }
 .contatos a {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--color-client1);
   margin-bottom: 1rem;

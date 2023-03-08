@@ -191,11 +191,11 @@ body {
   margin-bottom: 1rem;
 }
 .solar-home-text p {
-  font-size: 16px;
   margin-bottom: 64px;
-  padding: 5px;
+  padding: 15px;
   margin: 20px;
   line-height: 1.5em;
+  text-align: justify;
 }
 .solar-home-img {
   display: flex;
@@ -239,10 +239,11 @@ body {
 }
 
 .sobre-home-text {
-  text-align: center;
+  text-align: justify;
   text-justify: distribute-all-lines;
 }
 .sobre-home-text h3 {
+  text-align: center;
   font-size: 32px;
   font-weight: 700;
   color: var(--color-client2);
@@ -258,8 +259,9 @@ body {
 }
 
 .sobre-button {
-  width: 100%;
   text-align: center;
+  width: 100%;
+  margin-top: 30px;
 }
 /*projetos*/
 .projetos-home {

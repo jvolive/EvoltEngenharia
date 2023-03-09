@@ -20,7 +20,7 @@ body {
   background: var(--color-white);
 }
 
-/*Navigation bar*/
+/*navigation bar*/
 .navigation {
   display: flex;
   align-items: center;
@@ -33,28 +33,25 @@ body {
   position: fixed;
   z-index: 2;
 }
-
 .navigation .logo img {
   width: 150px;
 }
-
 .navigation ul {
   display: flex;
   align-items: center;
   gap: 5rem;
   list-style: none;
 }
-
 .navigation ul li a {
   color: var(--color-client2);
   font-size: 17px;
   font-weight: 600;
   transition: all 0.5s;
 }
-
 .navigation ul li a:hover {
   color: var(--color-client1);
 }
+/*End navigation bar*/
 
 /*menu responsive*/
 .menu {
@@ -76,8 +73,25 @@ body {
 .menu .bar:nth-child(3) {
   background: var(--color-client2);
 }
+/*End menu responsive*/
 
-/*main*/
+/*botao de orcamento*/
+.btn-orcamento {
+  padding: 15px 45px;
+  background: var(--color-client2);
+  color: var(--color-white);
+  border-radius: 10px;
+  font-weight: 550;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+
+.btn-orcamento:hover {
+  background: var(--color-client1);
+}
+/*End botao de orcamento*/
+
+/*page-index*/
 .home {
   width: 100%;
   height: 100vh;
@@ -110,20 +124,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.btn-orcamento {
-  padding: 15px 45px;
-  background: var(--color-client2);
-  color: var(--color-white);
-  border-radius: 10px;
-  font-weight: 550;
-  transition: all 0.5s;
-  font-size: 20px;
-}
-
-.btn-orcamento:hover {
-  background: var(--color-client1);
-}
-/* Slider*/
+/*Slider*/
 .swiper {
   width: 50%;
   height: 300px;
@@ -141,22 +142,9 @@ body {
 .swiper-pagination-bullet {
   --swiper-pagination-color: var(--color-client2);
 }
-/* footer*/
-.copyright {
-  padding: 1px;
-  text-align: center;
-  font-size: 16px;
-  color: var(--color-client1);
-}
-.developer {
-  padding: 1px;
-  text-align: center;
-}
-.developer a {
-  font-size: 12px;
-  color: var(--color-client1);
-}
-/* Start - Page-solar*/
+/*End page-index*/
+
+/*page-solar*/
 .solar-home {
   width: 100%;
   height: 100%;
@@ -225,9 +213,9 @@ body {
   width: 100%;
   margin-top: 30px;
 }
-/* End - Page-solar*/
+/*End page-solar*/
 
-/*Start - Page-sobre*/
+/*page-sobre*/
 /*historia*/
 .sobre-home {
   width: 100%;
@@ -237,7 +225,6 @@ body {
   padding: 110px;
   display: block;
 }
-
 .sobre-home-text {
   text-align: justify;
   text-justify: distribute-all-lines;
@@ -249,7 +236,6 @@ body {
   color: var(--color-client2);
   margin-bottom: 1rem;
 }
-
 .sobre-home-text p {
   margin-bottom: 64px;
   padding: 15px;
@@ -257,12 +243,12 @@ body {
   line-height: 1.5em;
   text-align: justify;
 }
-
 .sobre-button {
   text-align: center;
   width: 100%;
   margin-top: 30px;
 }
+
 /*projetos*/
 .projetos-home {
   width: 100%;
@@ -284,9 +270,9 @@ body {
 .fb-post-container {
   text-align: center;
 }
-/*End - Page-sobre*/
+/*End page-sobre*/
 
-/*Start - Page contatos*/
+/*page contatos*/
 .contato-home {
   width: 100%;
   height: 100%;
@@ -319,9 +305,9 @@ body {
   width: 100%;
   text-align: center;
 }
-/*End - Page contatos*/
+/*End page contatos*/
 
-/*Start - Page calculadora*/
+/*page calculadora*/
 .cal_solar-home {
   width: 100%;
   height: 100%;
@@ -355,7 +341,8 @@ body {
   padding: 20px;
   text-align: center;
 }
-/*End - Page calculadora*/
+/*End page calculadora*/
+
 /*information*/
 .infos {
   align-items: center;
@@ -434,6 +421,24 @@ body {
 .icons ul li:nth-child(4) a:hover:before {
   background: #ff0000;
 }
+/*End icones*/
+
+/*footer*/
+.copyright {
+  padding: 1px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-client1);
+}
+.developer {
+  padding: 1px;
+  text-align: center;
+}
+.developer a {
+  font-size: 12px;
+  color: var(--color-client1);
+}
+/*End footer*/
 
 /*responsive*/
 @media (max-width: 785px) {
@@ -469,8 +474,15 @@ body {
   .nav-item {
     margin: 16px 0;
   }
+  .btn-orcamento {
+    padding: 15px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
 
-  /*main*/
+  /*index*/
   .home {
     padding: 100px 2%;
     flex-direction: column;
@@ -488,7 +500,25 @@ body {
   .home p {
     font-size: 15px;
   }
-  .glider img {
+  .swiper img {
     max-width: 100vh;
+  }
+  /*energia solar*/
+  .solar-home {
+    padding: 100px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
+  .solar-home .text-h4 {
+    font-size: 15px;
+  }
+  .solar-home .text-h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .solar-home p {
+    font-size: 15px;
   }
 }

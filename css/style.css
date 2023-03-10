@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap");
 
+@font-face {
+  font-family: font-evolt;
+  src: url(/fonts/Meedori\ Sans\ Bold.ttf) format(truetype),
+    url(/fonts/Meedori\ Sans\ Light.ttf) format(truetype),
+    url(/fonts/Meedori\ Sans\ Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "font-evolt", "Roboto", sans-serif;
   text-decoration: none;
 }
 

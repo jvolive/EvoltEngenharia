@@ -89,6 +89,7 @@ body {
   padding: 15px 45px;
   background: var(--color-client2);
   color: var(--color-white);
+  border: none;
   border-radius: 10px;
   font-weight: 550;
   transition: all 0.5s;
@@ -619,4 +620,3 @@ body {
     font-size: 12px;
   }
 }
-

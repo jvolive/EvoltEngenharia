@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css" />
+
     <title>Contato | Evolt Engenharia</title>
   </head>
   <body>
@@ -45,15 +46,21 @@
         <!--Historia-->
         <div class="contato-home-text">
           <h3>Entre em contato</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, vero
-            nemo cum nihil mollitia laudantium atque quibusdam pariatur
-            exercitationem, sequi rem. Similique, placeat alias! Asperiores
-            deleniti facilis facere fugiat officia.
-          </p>
-        </div>
-        <div class="contato-button">
-          <a href="#" class="btn-orcamento"> Faça seu orçamento</a>
+          <form id="meu-formulario">
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nova mensagem de contato" />
+            <input type="text" name="nome" placeholder="Nome" required /><br />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required /><br />
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea
+            ><br />
+            <button class="btn-orcamento" type="submit">Entrar em contato</button>
+          </form>
         </div>
       </section>
       <section class="infos">

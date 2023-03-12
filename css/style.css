@@ -601,6 +601,7 @@ body {
     text-align: center;
     overflow: hidden;
     gap: 1rem;
+    font-size: 12px;
   }
   .home {
     padding: 50px 2%;
@@ -618,5 +619,9 @@ body {
   }
   .home p {
     font-size: 12px;
+  }
+  .swiper-slide {
+    width: 255px;
+    height: 255px;
   }
 }

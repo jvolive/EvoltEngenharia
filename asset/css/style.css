@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: font-evolt;
-  src: url(/fonts/Meedori\ Sans\ Bold.ttf) format(truetype),
-    url(/fonts/Meedori\ Sans\ Light.ttf) format(truetype),
-    url(/fonts/Meedori\ Sans\ Regular.ttf) format(truetype);
+  src: url(/asset/fonts/Meedori\ Sans\ Bold.ttf) format(truetype),
+    url(/asset/fonts/Meedori\ Sans\ Light.ttf) format(truetype),
+    url(/asset/fonts/Meedori\ Sans\ Regular.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
@@ -116,6 +116,7 @@ body {
   max-width: 37rem;
   width: 50%;
   padding: 20px;
+  margin-right: 20px;
 }
 
 .home-text .text-h4 {
@@ -134,25 +135,38 @@ body {
   font-family: "font-evolt";
 }
 
-.home-text p {
-  margin-bottom: 4rem;
+.home-text .text-p1 {
   font-family: "Roboto";
   text-justify: distribute-all-lines;
+  line-height: 1.5;
+  padding-bottom: 8px;
   text-align: justify;
+}
+.home-text .text-p2 {
+  color: var(--color-client2);
+  font-weight: bold;
+  font-family: "Roboto";
+  text-justify: distribute-all-lines;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  text-align: justify;
+}
+.btn-index {
+  margin-top: 20px;
 }
 
 /*Slider*/
 .swiper-slide {
   position: relative;
-  width: 50%;
-  height: 300px;
+  width: 100%;
+  height: 50%;
   border-radius: 10px; /* adiciona o border-radius na imagem */
-  overflow: hidden; /* recorta o conteúdo que extrapole os limites */
+  overflow: hidden;
+  font-family: "Roboto"; /* recorta o conteúdo que extrapole os limites */
 }
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -172,15 +186,10 @@ body {
   align-items: center;
 }
 
-.swiper-slide-overlay h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
 .swiper-slide-overlay p {
   font-size: 16px;
   text-align: center;
+  font-weight: bold;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -260,14 +269,14 @@ body {
   text-align: -webkit-match-parent;
 }
 
-.solar-button {
+.btn-solar {
   text-align: center;
   width: 100%;
   margin-top: 30px;
 }
 /*End page-solar*/
 
-/*page-sobre*/
+/*page-sobre_nos*/
 /*historia*/
 .sobre-home {
   width: 100%;
@@ -297,7 +306,7 @@ body {
   text-align: justify;
   font-family: "Roboto";
 }
-.sobre-button {
+.btn-sobre_nos {
   text-align: center;
   width: 100%;
   margin-top: 30px;
@@ -358,7 +367,8 @@ body {
   font-family: "Roboto";
 }
 
-.contato-button {
+.btn-contato {
+  margin-top: 20px;
   width: 100%;
   text-align: center;
 }
@@ -395,7 +405,7 @@ body {
   font-family: "Roboto";
 }
 
-.cal_solar-button {
+.btn-cal_solar {
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -487,7 +497,7 @@ body {
 .copyright {
   padding: 1px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-client1);
 }
 .copyright-evolt {
@@ -508,7 +518,112 @@ body {
 /*End footer*/
 
 /*responsive*/
-@media (max-width: 785px) {
+@media (max-width: 1024px) {
+  .navigation {
+    padding: 18px 20px;
+  }
+  .menu {
+    display: block;
+  }
+  .menu.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--color-white);
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-menu.ativo {
+    right: 0;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .navigation ul li a {
+    font-size: 20px;
+  }
+  .btn-orcamento {
+    padding: 15px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+    font-size: 24px;
+  }
+
+  /*index*/
+  .home {
+    padding: 80px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
+  .home .text-h4 {
+    font-size: 24px;
+  }
+  .home .text-h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .home p {
+    font-size: 20px;
+  }
+  /*Slide*/
+  .swiper {
+    width: 60%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+  .developer {
+    font-size: 10px;
+  }
+
+  /*energia solar*/
+  .solar-home {
+    padding: 100px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
+  .solar-home .text-h4 {
+    font-size: 15px;
+  }
+  .solar-home .text-h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .solar-home p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
   .navigation {
     padding: 18px 20px;
   }
@@ -542,66 +657,74 @@ body {
     margin: 16px 0;
   }
   .btn-orcamento {
-    padding: 15px 2%;
-    flex-direction: column;
-    text-align: center;
-    overflow: hidden;
-    gap: 5rem;
-  }
-
-  /*index*/
-  .home {
-    padding: 80px 2%;
-    flex-direction: column;
-    text-align: center;
-    overflow: hidden;
-    gap: 5rem;
-  }
-  .home .text-h4 {
-    font-size: 15px;
-  }
-  .home .text-h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  .home p {
-    font-size: 15px;
-  }
-  /*Slide*/
-  .swiper-slide {
-    width: 100%;
-    height: 50vh;
-  }
-  .swiper-slide img {
-    width: 125%;
-  }
-  /*energia solar*/
-  .solar-home {
-    padding: 100px 2%;
-    flex-direction: column;
-    text-align: center;
-    overflow: hidden;
-    gap: 5rem;
-  }
-  .solar-home .text-h4 {
-    font-size: 15px;
-  }
-  .solar-home .text-h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  .solar-home p {
-    font-size: 15px;
-  }
-}
-@media (max-width: 420px) {
-  /* regras de estilo para telas menores ou iguais a 828px */
-  .btn-orcamento {
     padding: 10px 2%;
     text-align: center;
     overflow: hidden;
     gap: 1rem;
     font-size: 12px;
+  }
+  .home {
+    padding: 50px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 1rem;
+  }
+  .home .text-h4 {
+    font-size: 18px;
+  }
+  .home .text-h1 {
+    font-size: 32px;
+    line-height: 2.5rem;
+  }
+  .home p {
+    font-size: 18px;
+  }
+  .swiper-slide {
+    width: 255px;
+    height: 255px;
+  }
+}
+@media (max-width: 480px) {
+  /* regras de estilo para telas menores ou iguais a 828px */
+  .navigation {
+    padding: 18px 20px;
+  }
+  .menu {
+    display: block;
+  }
+  .menu.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--color-white);
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-menu.ativo {
+    right: 0;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .btn-orcamento {
+    padding: 10px 2%;
+    text-align: center;
+    overflow: hidden;
+    gap: 1rem;
+    font-size: 16px;
   }
   .home {
     padding: 50px 2%;
@@ -618,7 +741,72 @@ body {
     line-height: 2.5rem;
   }
   .home p {
+    font-size: 16px;
+  }
+  .swiper-slide {
+    width: 255px;
+    height: 255px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navigation {
+    padding: 18px 20px;
+  }
+  .menu {
+    display: block;
+  }
+  .menu.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--color-white);
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-menu.ativo {
+    right: 0;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .btn-orcamento {
+    padding: 10px 2%;
+    text-align: center;
+    overflow: hidden;
+    gap: 1rem;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .home {
+    padding: 50px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 1rem;
+  }
+  .home .text-h4 {
     font-size: 12px;
+  }
+  .home .text-h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .home p {
+    font-size: 14px; /* padrao dessa resolução*/
   }
   .swiper-slide {
     width: 255px;

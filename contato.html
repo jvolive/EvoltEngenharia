@@ -9,7 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/asset/css/style.css" />
     <title>Contato | Evolt Engenharia</title>
   </head>
@@ -46,18 +47,38 @@
         <div class="contato-home-text">
           <h3>Entre em contato</h3>
           <form id="meu-formulario">
-            <input
-              type="hidden"
-              name="_subject"
-              value="Nova mensagem de contato" />
-            <input type="text" name="nome" placeholder="Nome" required /><br />
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              required /><br />
-            <textarea name="mensagem" placeholder="Mensagem" required></textarea
-            ><br />
+            <div class="form-name">
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nova mensagem de contato"
+              />
+              <input
+                type="text"
+                name="nome"
+                placeholder="Nome"
+                class="inputs required"
+                oninput="nameValidate()"
+              />
+              <span class="span-required"
+                >Nome deve ter no mínimo 3 caracteres</span
+              >
+            </div>
+            <div class="form-email">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="inputs required"
+                oninput="emailValidate()"
+              />
+              <span class="span-required">Digite um email válido</span>
+            </div>
+            <textarea
+              name="mensagem"
+              placeholder="Mensagem"
+              required
+            ></textarea>
             <div class="btn-contato">
               <button class="btn-orcamento" type="submit">
                 Entrar em contato

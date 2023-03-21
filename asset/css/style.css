@@ -135,21 +135,15 @@ body {
   font-family: "font-evolt";
 }
 
-.home-text .text-p1 {
+.home-text p {
   font-family: "Roboto";
   text-justify: distribute-all-lines;
   line-height: 1.5;
   padding-bottom: 8px;
   text-align: justify;
 }
-.home-text .text-p2 {
+.home-text p strong {
   color: var(--color-client2);
-  font-weight: bold;
-  font-family: "Roboto";
-  text-justify: distribute-all-lines;
-  line-height: 1.5;
-  padding-bottom: 8px;
-  text-align: justify;
 }
 .btn-index {
   margin-top: 20px;
